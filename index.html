@@ -25,15 +25,11 @@
    })
    $('.side_box').click(function(event){
     event.stopPropagation();
+     $(this).siblings().css('background-color', random_color());
    })
    $('.middle_box').click(function(event){
     event.stopPropagation();
-   })
-   $('.middle_box').click(function(){
     $('#large_box').css('background-color', random_color());
-   })
-   $('.side_box').click(function(){
-    $(this).siblings().css('background-color', random_color());
    })
   });
  </script>
